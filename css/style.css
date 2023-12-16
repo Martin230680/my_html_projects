@@ -101,6 +101,7 @@ body {
   font: inherit;
   color: inherit;
   background: inherit;
+  cursor: pointer;
 }
 
 .container {
@@ -126,7 +127,7 @@ body {
 }
 
 a:active,
-a:focus {
+a:focus-visible {
   outline: none;
 }
 
@@ -140,7 +141,7 @@ textarea:active {
   outline: none;
 }
 
-:focus {
+:focus-visible {
   outline: none;
 }
 
@@ -195,10 +196,10 @@ textarea:active {
   cursor: pointer;
   background-color: var(--black);
   letter-spacing: 1.5px;
-  -webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, outline-offset 0.5s ease-in-out;
-  -o-transition: background-color 0.5s ease-in ease-in-out, color 0.5s ease-in-out, outline-offset 0.5s ease-in-out;
-  -o-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, outline-offset 0.5s ease-in-out;
-  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, outline-offset 0.5s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in ease-in-out, color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
 }
 
 .header__btn:hover {
@@ -208,7 +209,7 @@ textarea:active {
   outline-offset: 5px;
 }
 
-.header__btn:focus {
+.header__btn:focus-visible {
   color: var(--white);
   background-color: var(--pink);
   outline: 1px solid var(--pink);
@@ -234,9 +235,9 @@ textarea:active {
   line-height: 24px;
   letter-spacing: 1.5px;
   color: var(--white);
-  -webkit-transition: color 0.5s ease-in-out;
-  -o-transition: color 0.5s ease-in-out;
-  transition: color 0.5s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .nav__link::before,
@@ -251,12 +252,12 @@ textarea:active {
   -webkit-transform: scaleX(0);
   -ms-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition: background-color 0.5s ease-in-out, -webkit-transform 0.5s 0.5s ease-in-out;
-  transition: background-color 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  -o-transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
-  -webkit-transition: background-color 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 .nav__link:hover::before,
@@ -266,8 +267,8 @@ textarea:active {
   transform: scaleX(1);
 }
 
-.nav__link:focus::before,
-.footermenulist__item-nav:focus::before {
+.nav__link:focus-visible::before,
+.footermenulist__item-nav:focus-visible::before {
   -webkit-transform: scaleX(0);
   -ms-transform: scaleX(0);
   transform: scaleX(0);
@@ -286,8 +287,8 @@ textarea:active {
   color: var(--lightpink);
 }
 
-.nav__link:focus,
-.footermenulist__item-nav:focus {
+.nav__link:focus-visible,
+.footermenulist__item-nav:focus-visible {
   color: var(--lightpink);
 }
 
@@ -347,10 +348,10 @@ textarea:active {
   color: var(--white);
   cursor: pointer;
   letter-spacing: 1.7px;
-  -webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, outline-offset 0.5s ease-in-out;
-  -o-transition: background-color 0.5s ease-in ease-in-out, color 0.5s ease-in-out, outline-offset 0.5s ease-in-out;
-  -o-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, outline-offset 0.5s ease-in-out;
-  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, outline-offset 0.5s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in ease-in-out, color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
 
 }
 
@@ -365,10 +366,10 @@ textarea:active {
   color: #FFFFFF;
   cursor: pointer;
   letter-spacing: 1.7px;
-  -webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, outline-offset 0.5s ease-in-out;
-  -o-transition: background-color 0.5s ease-in ease-in-out, color 0.5s ease-in-out, outline-offset 0.5s ease-in-out;
-  -o-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, outline-offset 0.5s ease-in-out;
-  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, outline-offset 0.5s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in ease-in-out, color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
 
 }
 
@@ -378,7 +379,7 @@ textarea:active {
   outline-offset: 5px;
 }
 
-.home__btn1:focus {
+.home__btn1:focus-visible {
   background-color: var(--lightblue);
   outline: 1px solid var(--lightblue);
   outline-offset: 5px;
@@ -397,7 +398,7 @@ textarea:active {
   outline-offset: 5px;
 }
 
-.home__btn2:focus {
+.home__btn2:focus-visible {
   color: var(--white);
   background-color: var(--pink);
   outline: 1px solid var(--pink);
@@ -670,10 +671,10 @@ textarea:active {
   color: var(--white);
   background-color: var(--darkblue);
   letter-spacing: 1.7px;
-  -webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, outline-offset 0.5s ease-in-out;
-  -o-transition: background-color 0.5s ease-in ease-in-out, color 0.5s ease-in-out, outline-offset 0.5s ease-in-out;
-  -o-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, outline-offset 0.5s ease-in-out;
-  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, outline-offset 0.5s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in ease-in-out, color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
 
 }
 
@@ -683,7 +684,7 @@ textarea:active {
   outline-offset: 5px;
 }
 
-.extensionsblocks__btn:focus {
+.extensionsblocks__btn:focus-visible {
   background-color: var(--lightblue);
   outline: 1px solid var(--lightblue);
   outline-offset: 5px;
@@ -850,10 +851,10 @@ textarea:active {
   cursor: pointer;
   background-color: #181818;
   letter-spacing: 1.7px;
-  -webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, outline-offset 0.5s ease-in-out;
-  -o-transition: background-color 0.5s ease-in ease-in-out, color 0.5s ease-in-out, outline-offset 0.5s ease-in-out;
-  -o-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, outline-offset 0.5s ease-in-out;
-  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, outline-offset 0.5s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in ease-in-out, color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
 }
 
 .gallerybottom__btn:hover {
@@ -863,7 +864,7 @@ textarea:active {
   outline-offset: 5px;
 }
 
-.gallerybottom__btn:focus {
+.gallerybottom__btn:focus-visible {
   color: var(--white);
   background-color: var(--pink);
   outline: 1px solid var(--pink);
@@ -936,11 +937,11 @@ textarea:active {
 
 .midlewrap__blockleft-img,
 .midlewrap__blockright-img {
-  -webkit-transition: outline-offset 0.5s ease-in-out, opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  transition: outline-offset 0.5s ease-in-out, opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  -o-transition: transform 0.5s ease-in-out, outline-offset 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, outline-offset 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, outline-offset 0.5s ease-in-out, opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: outline-offset 0.3s ease-in-out, opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: outline-offset 0.3s ease-in-out, opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out, outline-offset 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, outline-offset 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, outline-offset 0.3s ease-in-out, opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   cursor: pointer;
 }
 
@@ -971,7 +972,7 @@ textarea:active {
           transform: scale(1.2);
 }
 
-.midlewrap__blockright-link:focus img {
+.midlewrap__blockright-link:focus-visible img {
   outline: 1px solid var(--darkpink);
   outline-offset: 6px;
   -webkit-transform: scale(1.2);
@@ -979,7 +980,7 @@ textarea:active {
           transform: scale(1.2);
 }
 
-.midlewrap__blockleft-link:focus img {
+.midlewrap__blockleft-link:focus-visible img {
   outline: 1px solid var(--darkpink);
   outline-offset: 6px;
   -webkit-transform: scale(1.2);
@@ -1011,10 +1012,10 @@ textarea:active {
   cursor: pointer;
   background-color: #181818;
   letter-spacing: 1.6px;
-  -webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, outline-offset 0.5s ease-in-out;
-  -o-transition: background-color 0.5s ease-in ease-in-out, color 0.5s ease-in-out, outline-offset 0.5s ease-in-out;
-  -o-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, outline-offset 0.5s ease-in-out;
-  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, outline-offset 0.5s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in ease-in-out, color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
 }
 
 .partners__btn:hover {
@@ -1024,7 +1025,7 @@ textarea:active {
   outline-offset: 5px;
 }
 
-.partners__btn:focus {
+.partners__btn:focus-visible {
   color: var(--white);
   background-color: var(--pink);
   outline: 1px solid var(--pink);
@@ -1160,27 +1161,33 @@ textarea:active {
   line-height: 24px;
   color: var(--white);
   letter-spacing: 1.2px;
-  -webkit-transition: color 0.5s ease-in-out, fill 0.5s ease-in-out;
-  -o-transition: color 0.5s ease-in-out, fill 0.5s ease-in-out;
-  transition: color 0.5s ease-in-out, fill 0.5s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out, fill 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out, fill 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, fill 0.3s ease-in-out;
 
 }
 
 .footermenusoslist__item span,
 .footermenusoslist__item svg path {
   fill: var(--white);
-  -webkit-transition: color 0.5s ease-in-out, fill 0.5s ease-in-out;
-  -o-transition: color 0.5s ease-in-out, fill 0.5s ease-in-out;
-  transition: color 0.5s ease-in-out, fill 0.5s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out, fill 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out, fill 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, fill 0.3s ease-in-out;
 }
 
 .footermenusoslist__item-link:hover {
   color: var(--lightpink);
 }
 
-.footermenusoslist__item-link:focus {
+.footermenusoslist__item-link:focus-visible {
   color: var(--pinkmenu);
 }
+
+.footermenusoslist__item-link:focus-visible svg.pointlink__svg path {
+  fill: var(--pinkmenu);
+}
+
+
 
 .footermenusoslist__item-link:active {
   color: var(--lightpink);
@@ -1190,9 +1197,6 @@ textarea:active {
   fill: var(--lightpink);
 }
 
-.footermenusoslist__item:focus svg.pointlink__svg path {
-  fill: var(--pinkmenu);
-}
 
 .footermenusoslist__item:active svg.pointlink__svg path {
   fill: var(--lightpink);
@@ -1202,9 +1206,10 @@ textarea:active {
   fill: var(--lightpink);
 }
 
-.footermenusoslist__item:focus svg.phonelink__svg path {
+.footermenusoslist__item-link:focus-visible svg.phonelink__svg path {
   fill: var(--pinkmenu);
 }
+
 
 .footermenusoslist__item:active svg.phonelink__svg path {
   fill: var(--lightpink);
@@ -1220,7 +1225,10 @@ textarea:active {
 
 .pointlink__svg {
   margin-right: 8px;
+}
 
+.footermenusoslist__item svg.pointlink__svg path{
+  fill:var(--white);
 }
 
 .phonelink__svg {
@@ -1241,7 +1249,7 @@ textarea:active {
   fill: var(--lightpink);
 }
 
-.sosicon:focus svg path {
+.sosicon:focus-visible svg path {
   fill: var(--pinkmenu);
 }
 
