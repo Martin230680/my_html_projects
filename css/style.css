@@ -205,14 +205,14 @@ textarea:active {
 .header__btn:hover {
   color: var(--white);
   background-color: var(--darkpink);
-  outline: 1px solid var(--darkpink);
+  outline: 2px solid var(--darkpink);
   outline-offset: 5px;
 }
 
 .header__btn:focus-visible {
   color: var(--white);
   background-color: var(--pink);
-  outline: 1px solid var(--pink);
+  outline: 2px solid var(--pink);
   outline-offset: 5px;
 
 }
@@ -375,13 +375,13 @@ textarea:active {
 
 .home__btn1:hover {
   background-color: var(--lightblue);
-  outline: 1px solid var(--lightblue);
+  outline: 2px solid var(--lightblue);
   outline-offset: 5px;
 }
 
 .home__btn1:focus-visible {
   background-color: var(--lightblue);
-  outline: 1px solid var(--lightblue);
+  outline: 2px solid var(--lightblue);
   outline-offset: 5px;
 }
 
@@ -394,14 +394,14 @@ textarea:active {
 .home__btn2:hover {
   color: var(--white);
   background-color: var(--darkpink);
-  outline: 1px solid var(--darkpink);
+  outline: 2px solid var(--darkpink);
   outline-offset: 5px;
 }
 
 .home__btn2:focus-visible {
   color: var(--white);
   background-color: var(--pink);
-  outline: 1px solid var(--pink);
+  outline: 2px solid var(--pink);
   outline-offset: 5px;
 }
 
@@ -680,13 +680,13 @@ textarea:active {
 
 .extensionsblocks__btn:hover {
   background-color: var(--lightblue);
-  outline: 1px solid var(--lightblue);
+  outline: 2px solid var(--lightblue);
   outline-offset: 5px;
 }
 
 .extensionsblocks__btn:focus-visible {
   background-color: var(--lightblue);
-  outline: 1px solid var(--lightblue);
+  outline: 2px solid var(--lightblue);
   outline-offset: 5px;
 
 }
@@ -860,14 +860,14 @@ textarea:active {
 .gallerybottom__btn:hover {
   color: var(--white);
   background-color: var(--darkpink);
-  outline: 1px solid var(--darkpink);
+  outline: 2px solid var(--darkpink);
   outline-offset: 5px;
 }
 
 .gallerybottom__btn:focus-visible {
   color: var(--white);
   background-color: var(--pink);
-  outline: 1px solid var(--pink);
+  outline: 2px solid var(--pink);
   outline-offset: 5px;
 }
 
@@ -1021,14 +1021,14 @@ textarea:active {
 .partners__btn:hover {
   color: var(--white);
   background-color: var(--darkpink);
-  outline: 1px solid var(--darkpink);
+  outline: 2px solid var(--darkpink);
   outline-offset: 5px;
 }
 
 .partners__btn:focus-visible {
   color: var(--white);
   background-color: var(--pink);
-  outline: 1px solid var(--pink);
+  outline: 2px solid var(--pink);
   outline-offset: 5px;
 }
 
@@ -1180,18 +1180,21 @@ textarea:active {
 }
 
 .footermenusoslist__item-link:focus-visible {
-  color: var(--pinkmenu);
+  color: var(--pink);
+  
 }
-
-.footermenusoslist__item-link:focus-visible svg.pointlink__svg path {
-  fill: var(--pinkmenu);
-}
-
-
 
 .footermenusoslist__item-link:active {
-  color: var(--lightpink);
+  
+  color:var(--darkpink);
 }
+
+
+.footermenusoslist__item-link:focus-visible svg.pointlink__svg path {
+  fill:  var(--pink);
+}
+
+
 
 .footermenusoslist__item:hover svg.pointlink__svg path {
   fill: var(--lightpink);
@@ -1199,7 +1202,8 @@ textarea:active {
 
 
 .footermenusoslist__item:active svg.pointlink__svg path {
-  fill: var(--lightpink);
+  fill: var(--darkpink);
+
 }
 
 .footermenusoslist__item:hover svg.phonelink__svg path {
@@ -1207,12 +1211,13 @@ textarea:active {
 }
 
 .footermenusoslist__item-link:focus-visible svg.phonelink__svg path {
-  fill: var(--pinkmenu);
+  fill: var(--pink);
 }
 
 
 .footermenusoslist__item:active svg.phonelink__svg path {
-  fill: var(--lightpink);
+  
+  fill:var(--darkpink);
 }
 
 .footermenusoslist__item-link {
@@ -1250,11 +1255,12 @@ textarea:active {
 }
 
 .sosicon:focus-visible svg path {
-  fill: var(--pinkmenu);
+  
+  fill: var(--pink);
 }
 
 .sosicon:active svg path {
-  fill: var(--lightpink);
+  fill:var(--darkpink);
 }
 
 .sosicon:not(:last-child) {
